@@ -34,22 +34,25 @@
         </div>
 
         <style>
-            body {
-                background-color: black;
-            }
-            * {
+             * {
                 box-sizing: border-box;
                 text-align: center;
                 margin: auto;
             }
+            body {
+                background-color: black;
+                height: 100vh;
+                padding-top: 20%;
+            }
+           
             .circle {
                 border-radius: 50%;
-                box-shadow: 0 0 2em rgb(255,0,0,0.5);
+                box-shadow: 0 0 2em rgb(255,0,0,0.6);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 50em;
-                height: 50em;
+                width: 70vw;
+                height: 70vw;
                 transform-origin: 50%;
                 position: relative;
             }
@@ -74,6 +77,13 @@
                 }
                 to {
                     transform: rotate(1turn) translate(22%, 22%)
+                }
+            }
+
+            @media screen and (min-width: 62em){
+                .circle {
+                    width: 70vh;
+                    height: 70vh; 
                 }
             }
         </style>
